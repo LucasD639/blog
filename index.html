@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h1, h2 {
+            color: #007bff; /* Azul escuro para títulos */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666; /* Cinza escuro para texto normal */
+            margin-bottom: 20px;
+            text-indent: 20px; /* Recuo de 20px na primeira linha */
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        #greetingOutput {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff; /* Azul para mensagem de saudação */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label for="nameInput">Digite seu nome:</label>
+    <input type="text" id="nameInput">
+    <button onclick="showGreeting()">Mostrar Saudação</button>
+    <p id="greetingOutput"></p>
+
+    <script>
+        function showGreeting() {
+            var name = document.getElementById('nameInput').value;
+            var greeting = 'Prezado(a)';
+
+            // Customize greeting based on input
+            if (name.trim() !== '') {
+                greeting += ' ' + name.trim() + ',';
+            } else {
+                greeting += ' usuário,';
+            }
+
+            greeting += '\n\nSeja bem-vindo(a) ao nosso blog sobre Criptomoedas!';
+
+            document.getElementById('greetingOutput').textContent = greeting;
+        }
+    </script>
+    <br>
+    <h1>O Mundo das Criptomoedas: Entendendo e Investindo</h1>
+    <p>Nos últimos anos, as criptomoedas emergiram como uma classe de ativos revolucionária, atraindo a atenção de investidores e entusiastas financeiros em todo o mundo. Mas o que são exatamente as criptomoedas e por que elas estão gerando tanto interesse? Vamos explorar esse fascinante universo e descobrir como você pode participar desse movimento financeiro inovador.</p>
+    <br>
+
+    <h2>O Que São Criptomoedas?</h2>
+    <p>Criptomoedas são formas de moeda digital que utilizam criptografia para garantir transações seguras e controlar a criação de novas unidades. Diferentemente das moedas tradicionais emitidas por governos (como o dólar ou o euro), as criptomoedas operam em uma rede descentralizada baseada em tecnologia blockchain.</p>
+    <br>
+
+    <h2>Tecnologia Blockchain: O Coração das Criptomoedas</h2>
+    <p>O blockchain é um sistema distribuído e transparente que registra todas as transações de uma criptomoeda. Ele funciona como um livro-razão digital, onde cada transação é verificada por uma rede de computadores (nós) sem a necessidade de uma autoridade central. Isso garante segurança e confiança nas transações, eliminando intermediários.</p>
+    <br>
+
+    <h2>Bitcoin: A Primeira e Mais Conhecida Criptomoeda</h2>
+    <p>O Bitcoin foi a primeira criptomoeda criada e continua sendo a mais dominante em termos de valor de mercado e reconhecimento. Criado por um pseudônimo conhecido como Satoshi Nakamoto em 2009, o Bitcoin introduziu a ideia de uma moeda digital descentralizada e sem fronteiras.</p>
+    <br>
+
+    <h2>Além do Bitcoin: Diversidade de Criptomoedas</h2>
+    <p>Desde o surgimento do Bitcoin, milhares de outras criptomoedas foram lançadas, cada uma com sua própria proposta e tecnologia subjacente. Ethereum, Ripple (XRP), Litecoin e Cardano são apenas alguns exemplos de criptomoedas populares que oferecem recursos e funcionalidades únicas.</p>
+    <br>
+
+    <h2>Por Que Investir em Criptomoedas?</h2>
+    <p>O interesse em investir em criptomoedas é impulsionado por vários fatores:</p>
+    <ul>
+        <li>Potencial de Valorização: Muitas criptomoedas têm experimentado ganhos significativos ao longo do tempo, atraindo investidores em busca de altos retornos.</li>
+        <li>Diversificação de Portfólio: As criptomoedas podem servir como uma forma de diversificação em um portfólio de investimentos tradicionais.</li>
+        <li>Inovação Tecnológica: A tecnologia por trás das criptomoedas, como o blockchain, representa uma inovação disruptiva com o potencial de transformar setores inteiros.</li>
+    </ul>
+    <br>
+
+    <h2>Como Começar a Investir em Criptomoedas?</h2>
+    <p>Eduque-se: Aprenda sobre diferentes criptomoedas, tecnologias e riscos associados.</p>
+    <p>Escolha uma Plataforma de Negociação: Registre-se em uma corretora de criptomoedas confiável para comprar e vender moedas.</p>
+    <p>Estabeleça um Plano: Defina seu objetivo de investimento e estratégia de compra e venda.</p>
+    <p>Mantenha a Segurança: Armazene suas criptomoedas de forma segura em uma carteira digital.</p>
+    <br>
+</body>
+</html>
